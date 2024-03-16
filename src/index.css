@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Billabong';
+  src: url('../FontsFree-Net-Billabong.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root{
+  --window-height: 100vh;
+  --bodyColor: "#000000";
+  --textColor: "#000000";
+}
+
+body {
+  background-color: var(--bodyColor);
+}
+
+h1, h2, h3, h4, p, button{
+  color: var(--textColor);
+}
+
+/* LoadComponent styles */
+.difuminado{
+  background: linear-gradient(to top right, yellow, purple, red, magenta);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 0;
+  padding: 0;
+}
+/* End of LoadComponent styles */
+
+/* SignUpComponent styles */
+.sign-up-container{
+  width: 350px;
+}
+
+.instagram-logo{
+  position: relative;
+  height: 50px;
+  margin-top: calc((var(--window-height) - 50px) / 2);
+  margin-bottom: calc((var(--window-height) - 50px) / 2);
+}
+
+.hr-width{
+  width: 80px;
+}
+
+.input{
+  background-color: rgb(245, 245, 245);
+  height: 35px;
+  width: 266px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin-top: 6px;
+  padding: 8px;
+  
+}
+
+.input::placeholder{
+  color: rgb(130, 130, 130);
+  font-size: 12px;
+}
+
+.conditions-text{
+  font-size: 11px;
+  color: rgb(130, 130, 130);
+}
+
+
+
+/* End of SignUpComponent styles */
+
+
+/* HomeComponent styles */
+
+  /* Home Component Modal styles*/
+  div form input.form-inputs{
+    box-sizing: content-box;
+    height: 20px;    
+    width: 250px;
+    color: white;
+    font-weight: 700;
+    background-color: #181818;
+    border: 1px solid #47484b;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  button .logInButton{
+    height: 35px;
+    width: 270px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  /* End of Home Component Modal styles*/
+
+.instagram-text{
+  font-family: 'Billabong', sans-serif;
+}
+/* End of HomeComponent styles */
